@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Databricks Table</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Update Databricks Table</h2>
+        <form id="updateForm">
+            <div>
+                <label for="id">ID (Required):</label>
+                <input type="text" id="id" name="id" required>
+            </div>
+
+            <div id="columnEntries">
+                <!-- Dynamic column entries will be added here -->
+            </div>
+
+            <button type="button" id="addColumn">Add Column</button>
+            <button type="submit">Submit Update</button>
+        </form>
+
+        <div id="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
